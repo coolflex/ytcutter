@@ -3,6 +3,7 @@
 flask==3.0.0
 flask-cors==4.0.0
 yt-dlp==2023.11.16
+gunicorn==21.2.0
 
 # Instructions for FFmpeg Installation:
 # 1. Windows: Download from gyan.dev/ffmpeg/builds/, extract, and add the 'bin' folder to system PATH.
