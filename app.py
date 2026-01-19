@@ -82,6 +82,15 @@ def download_segment():
                 os.remove(output_path)
             except Exception as e:
                 print(f"Error removing file: {e}")
+
+        # Serve the Vite built frontend
+@app.route('/')
+def index():
+    return send_file('dist/index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    return send_file(f'dist/{path}')
             return response
 
         # 5. Send File
@@ -94,4 +103,4 @@ def download_segment():
 if __name__ == '__main__':
     # Instructions: Ensure ffmpeg is in system PATH
     print("Starting Clipper Backend on port 5000...")
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", debug=True, port=int(os.environ.get("PORT", 7860)))
