@@ -1,0 +1,5 @@
+{
+  "name": "YT Clipper AI",
+  "description": "A high-performance YouTube video segment downloader with AI-assisted highlight detection using Gemini. Features a dark-themed UI, frame-accurate FFmpeg clipping, and precise timestamp controls.",
+  "requestFramePermissions": []
+}

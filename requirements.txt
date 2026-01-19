@@ -1,0 +1,14 @@
+
+# Required Python Packages
+flask==3.0.0
+flask-cors==4.0.0
+yt-dlp==2023.11.16
+
+# Instructions for FFmpeg Installation:
+# 1. Windows: Download from gyan.dev/ffmpeg/builds/, extract, and add the 'bin' folder to system PATH.
+# 2. macOS: Run 'brew install ffmpeg'.
+# 3. Linux (Ubuntu/Debian): Run 'sudo apt update && sudo apt install ffmpeg'.
+
+# To run the backend:
+# pip install -r requirements.txt
+# python app.py
