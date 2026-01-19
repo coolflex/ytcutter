@@ -91,7 +91,6 @@ def index():
 @app.route('/<path:path>')
 def serve_static(path):
     return send_file(f'dist/{path}')
-            return response
 
         # 5. Send File
         return send_file(output_path, as_attachment=True, download_name="youtube_clip.mp4")
